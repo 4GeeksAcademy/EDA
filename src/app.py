@@ -267,3 +267,6 @@ X_test_norm = pd.DataFrame(X_test_norm, index = X_test.index, columns = num_vari
 X_train_norm.head()
 
 # 6. Selección de características -> no lo realizo porque sólo me quedaron dos características relevantes
+
+X_train.to_csv("/workspaces/EDA/data/processed/clean_airbnb_train.csv", index=False)
+X_test.to_csv("/workspaces/EDA/data/processed/clean_airbnb_test.csv", index=False)
